@@ -23,7 +23,7 @@ export const SkinAnalysis = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleImageUpload = (event: any) => {
     const file = event.target.files?.[0];
     if (file) {
       const reader = new FileReader();
